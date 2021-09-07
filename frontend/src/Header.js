@@ -31,12 +31,13 @@ const Header = () => {
         >
         <Link style={{
             color: "white",
-            paddingTop: 7
+            alignSelf: "center",
+
         }} to="/mynotes">My Notes</Link>
         <NavDropdown title="Ashik" id="navbarScrollingDropdown">
-        <NavDropdown.Item href="#action3">My Profile</NavDropdown.Item>
+        <NavDropdown.Item> <Link to="/myprofile"> My Profile </Link></NavDropdown.Item>
         <NavDropdown.Divider />
-        <NavDropdown.Item href="#action5">Logout</NavDropdown.Item>
+        <NavDropdown.Item><Link to="/">Logout</Link></NavDropdown.Item>
       </NavDropdown>
       
     </Nav>
