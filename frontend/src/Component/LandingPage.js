@@ -1,12 +1,37 @@
 // import clue from './clue.png';
 import './LandingPage.css';
-import {} from 'react-bootstrap';
+import { Container, Row, Button } from 'react-bootstrap';
 
-const Landing = () => {
+const LandingPage = () => {
     return (
         <div className="main">
-
+            <Container>
+            <Row>
+            <div className="intro-text">
+                 <div>
+                     <h1 className="title">
+                         Welcome to Notes Maker
+                     </h1>
+                     <p className="sub-title">
+                         one safe place for your Notes
+                     </p>
+                 </div>
+                 <div className="button-container">
+                 <a href="/login">
+                     <Button size="lg" className="log-btn">
+                         Login
+                     </Button>
+                     </a>
+                    <a href="/login">
+                     <Button size="lg" className="log-btn" variant="outline-primary">
+                         Signup
+                     </Button>
+                     </a>
+                 </div>
+            </div>
+            </Row>
+            </Container>
         </div>
     );
 }
-export default Landing;
+export default LandingPage;

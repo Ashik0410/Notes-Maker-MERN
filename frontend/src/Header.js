@@ -1,13 +1,15 @@
 import { Navbar, Nav, NavDropdown, Form, FormControl, Container } from 'react-bootstrap';
 import clue from './clue.png';
+import { Link } from 'react-router-dom';
+
 const Header = () => {
     return (
         <Navbar bg="primary" expand="lg" variant="dark"> 
         <Container>
-  <Navbar.Brand href="#">Notes Maker  <img src={clue} alt="logo" style={{
+  <Navbar.Brand><Link to="/">Notes Maker<img src={clue} alt="logo" style={{
             width: "30px",
             paddingRight: "4px"
-        }}/> </Navbar.Brand>
+        }}/></Link></Navbar.Brand>
  
   <Navbar.Toggle aria-controls="navbarScroll" />
   <Navbar.Collapse id="navbarScroll">
@@ -27,10 +29,11 @@ const Header = () => {
         }}
         navbarScroll
         >
-      <Nav.Link href="/" style={{
-            color: "white"
-        }}>My Notes</Nav.Link>
-      <NavDropdown title="Ashik" id="navbarScrollingDropdown">
+        <Link style={{
+            color: "white",
+            paddingTop: 7
+        }} to="/mynotes">My Notes</Link>
+        <NavDropdown title="Ashik" id="navbarScrollingDropdown">
         <NavDropdown.Item href="#action3">My Profile</NavDropdown.Item>
         <NavDropdown.Divider />
         <NavDropdown.Item href="#action5">Logout</NavDropdown.Item>
