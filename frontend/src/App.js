@@ -2,7 +2,7 @@ import Header from './Header';
 import Footer from './Footer';
 import Landing from './Component/LandingPage';
 import { BrowserRouter, Route } from 'react-router-dom';
-import myNotes from './Component/myNotes';
+import MyNotes from './Component/myNotes';
 
 function App() {
     return (
@@ -11,7 +11,7 @@ function App() {
         <Header />
         <main>
             <Route exact path="/" component={Landing} />
-            <Route path="/mynotes" component={myNotes} />
+            <Route path="/mynotes" component={MyNotes} />
             </main>
         <Footer />
         </div>

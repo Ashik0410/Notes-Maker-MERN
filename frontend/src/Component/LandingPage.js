@@ -1,6 +1,7 @@
 // import clue from './clue.png';
 import './LandingPage.css';
 import { Container, Row, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const LandingPage = () => {
     return (
@@ -17,16 +18,17 @@ const LandingPage = () => {
                      </p>
                  </div>
                  <div className="button-container">
-                 <a href="/login">
+                 <Link to="/login">
                      <Button size="lg" className="log-btn">
                          Login
                      </Button>
-                     </a>
-                    <a href="/login">
+                </Link>
+                 <Link to="/signup">
+
                      <Button size="lg" className="log-btn" variant="outline-primary">
                          Signup
                      </Button>
-                     </a>
+                </Link>
                  </div>
             </div>
             </Row>
